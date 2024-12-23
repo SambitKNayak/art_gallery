@@ -18,6 +18,9 @@ const HomePage: React.FC = () => {
           Explore the Gallery
         </button>
       </div>
+      <footer>
+        <h1>a SAMBIT KUMAR NAYAK creation</h1>
+      </footer>
     </div>
   );
 };
