@@ -1,9 +1,9 @@
-name: SAMBIT KUMAR NAYAK's Art-Gallery React App Build
+name: SAMBIT KUMAR NAYAK's ART-GALLERY React App Build
 
 on:
   push:
     branches:
-      - main  # Trigger on push to 'main' branch
+      - main
   pull_request:
     branches:
       - main
@@ -27,9 +27,8 @@ jobs:
       - name: Build project
         run: npm run build
 
-      # Optional: Upload build artifacts
       - name: Upload production build
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: production-build
           path: dist/
